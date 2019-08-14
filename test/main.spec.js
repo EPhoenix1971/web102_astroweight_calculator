@@ -69,7 +69,7 @@ describe('Change Calculator', function () {
         .select('#planets', planetName)
         .click('#calculate-button')
         .wait('#output')
-        .evaluate(() => document.querySelector('#output').innerText)
+        .evaluate(() =>  document.querySelector('#output').innerText)
         .then(x => expect(x).to.equal(`If you were on ${planetName}, you would weigh ${output}lbs!`))
     }
 
